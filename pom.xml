@@ -6,7 +6,7 @@
 
     <groupId>NeboBotCore</groupId>
     <artifactId>NeboBotCore</artifactId>
-    <version>1.7.2-FIX-UPGRADE_LIFT</version>
+    <version>1.8-STOP_BOT</version>
     <build>
         <plugins>
             <plugin>

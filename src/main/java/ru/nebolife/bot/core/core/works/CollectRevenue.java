@@ -2,6 +2,7 @@ package ru.nebolife.bot.core.core.works;
 
 import org.jsoup.nodes.Element;
 import ru.nebolife.bot.core.core.RequestCore;
+import ru.nebolife.bot.core.helpers.StopBotException;
 import ru.nebolife.bot.core.listeners.CollectRevenueListener;
 
 public class CollectRevenue {
@@ -14,7 +15,7 @@ public class CollectRevenue {
         this.listener = collectRevenueListener;
     }
 
-    public void run(String highcost) {
+    public void run(String highcost) throws StopBotException {
         this.highСost = highcost;
         this.requestCore.go("/floors/0/2");
         while (true) {

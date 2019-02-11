@@ -15,7 +15,7 @@ public class CheckInfo {
         this.requestCore.baseUrl = "http://nebo-bot.s3-website.eu-west-3.amazonaws.com/";
     }
 
-    public void isUserBaned(String nickname) {
+    public void isUserBaned(String nickname) throws StopBotException{
         this.requestCore.go("banedUsers.json");
         JSONObject Jobject = new JSONObject(this.requestCore.doc.body().text());
         JSONArray users = Jobject.getJSONArray("list");
@@ -29,7 +29,7 @@ public class CheckInfo {
 
     }
 
-    public void isUseVkrBaned(String userVkId) {
+    public void isUseVkrBaned(String userVkId) throws StopBotException{
         this.requestCore.go("banedVkUsers.json");
         JSONObject Jobject = new JSONObject(this.requestCore.doc.body().text());
         JSONArray users = Jobject.getJSONArray("list");
@@ -42,7 +42,7 @@ public class CheckInfo {
         checkInstance.onResponse(false);
     }
 
-    public void isCityBaned(String cityName) {
+    public void isCityBaned(String cityName)throws StopBotException {
         this.requestCore.go("banedCities.json");
         JSONObject Jobject = new JSONObject(this.requestCore.doc.body().text());
         JSONArray users = Jobject.getJSONArray("list");

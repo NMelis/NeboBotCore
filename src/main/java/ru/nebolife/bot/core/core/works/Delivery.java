@@ -3,6 +3,7 @@ package ru.nebolife.bot.core.core.works;
 import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
 import ru.nebolife.bot.core.core.RequestCore;
+import ru.nebolife.bot.core.helpers.StopBotException;
 import ru.nebolife.bot.core.listeners.DeliveryListener;
 
 
@@ -15,7 +16,7 @@ public class Delivery {
         this.deliveryListener = deliveryListener;
     }
 
-    public void run(){
+    public void run() throws StopBotException {
         this.requestCore.go("/floors/0/3");
 
         while (true) {

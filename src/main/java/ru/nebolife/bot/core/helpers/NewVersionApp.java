@@ -18,7 +18,7 @@ public class NewVersionApp {
     }
 
 
-    public void getInfoAboutANewVersionApp(float currentVersion){
+    public void getInfoAboutANewVersionApp(float currentVersion)throws StopBotException{
         this.requestCore.go("newVersionApp.json");
         final JSONObject Jobject = new JSONObject(this.requestCore.doc.body().text());
         if (!Jobject.getBoolean("show")){ return;}

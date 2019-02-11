@@ -3,6 +3,7 @@ package ru.nebolife.bot.core.core.works;
 import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
 import ru.nebolife.bot.core.core.RequestCore;
+import ru.nebolife.bot.core.helpers.StopBotException;
 import ru.nebolife.bot.core.listeners.QuestsListener;
 
 public class Quests {
@@ -15,7 +16,7 @@ public class Quests {
         this.listener = listener;
     }
 
-    public void getAwards(){
+    public void getAwards() throws StopBotException {
         this.requestCore.go("/quests");
         Elements awards = this.requestCore.doc.select("a[href*=:quest:getAwarLink::ILinkListener]");
         for (Element element: awards){

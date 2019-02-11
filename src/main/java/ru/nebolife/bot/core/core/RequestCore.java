@@ -12,6 +12,7 @@ import ru.nebolife.bot.core.core.works.*;
 import ru.nebolife.bot.core.helpers.CheckInfo;
 import ru.nebolife.bot.core.helpers.NewVersionApp;
 import ru.nebolife.bot.core.helpers.News;
+import ru.nebolife.bot.core.helpers.StopBotException;
 import ru.nebolife.bot.core.listeners.*;
 import ru.nebolife.bot.core.models.UserProfile;
 
@@ -24,13 +25,24 @@ public class RequestCore {
     public Document doc;
     protected OkHttpClient client;
     public UserProfile profile = new UserProfile();
+    public boolean isStop = false;
 
     public RequestCore(String baseUrl) {
         this.baseUrl = baseUrl;
         this.client = new OkHttpClient.Builder().cookieJar(new CookieStore()).build();
     }
 
-    public void go(String path){
+    public void stop(){
+        this.isStop = true;
+    }
+
+    public void unStop(){
+        this.isStop = false;
+    }
+
+
+    public void go(String path) throws StopBotException {
+        if (this.isStop) { throw new StopBotException();}
         try {
             Thread.sleep(700);
             String url = new URL(new URL(this.baseUrl), path).toString();
@@ -118,21 +130,21 @@ public class RequestCore {
     public void runManager(RevenueBuildListener revenueBuildListener,
                            DeliveryListener deliveryListener,
                            CollectRevenueListener collectRevenueListener,
-                           String highcost, boolean r, boolean d, boolean b){
+                           String highcost, boolean r, boolean d, boolean b) throws StopBotException{
         if (r) new RevenueBuild(this, revenueBuildListener).run();
         if (d) new Delivery(this, deliveryListener).run();
         if (b) new CollectRevenue(this, collectRevenueListener).run(highcost);
     }
 
-    public void revenueBuild(RevenueBuildListener revenueBuildListener){
+    public void revenueBuild(RevenueBuildListener revenueBuildListener)throws StopBotException{
         new RevenueBuild(this, revenueBuildListener).run();
     }
 
-    public void buy(String highcost, CollectRevenueListener collectRevenueListener){
+    public void buy(String highcost, CollectRevenueListener collectRevenueListener)throws StopBotException{
         new CollectRevenue(this, collectRevenueListener).run(highcost);
     }
 
-    public void delivery(DeliveryListener deliveryListener){
+    public void delivery(DeliveryListener deliveryListener)throws StopBotException{
         new Delivery(this, deliveryListener).run();
     }
 
@@ -140,39 +152,39 @@ public class RequestCore {
         return new Lift(this);
     }
 
-    public void lift(LiftListener liftListener){
+    public void lift(LiftListener liftListener)throws StopBotException{
         new Lift(this).run(liftListener);
     }
 
-    public void payAllDollars(LiftGetAllDollarsListener liftGetAllDollarsListener){
+    public void payAllDollars(LiftGetAllDollarsListener liftGetAllDollarsListener)throws StopBotException{
         new Lift(this).payAllDollars(liftGetAllDollarsListener);
     }
 
-    public void getQuestsAward(QuestsListener questsListener){
+    public void getQuestsAward(QuestsListener questsListener)throws StopBotException{
         new Quests(this, questsListener).getAwards();
     }
 
-    public void isUserVkBaned(String userVkId, CheckInstance checkInstance){
+    public void isUserVkBaned(String userVkId, CheckInstance checkInstance)throws StopBotException{
         new CheckInfo(this, checkInstance).isUseVkrBaned(userVkId);
     }
 
-    public void isCityBaned(String cityName, CheckInstance checkInstance){
+    public void isCityBaned(String cityName, CheckInstance checkInstance)throws StopBotException{
         new CheckInfo(this, checkInstance).isCityBaned(cityName);
     }
 
-    public void isUserBaned(String nickname, CheckInstance checkInstance){
+    public void isUserBaned(String nickname, CheckInstance checkInstance)throws StopBotException{
         new CheckInfo(this, checkInstance).isUserBaned(nickname);
     }
 
-    public void getLastNew(CheckInstanceNew checkInstanceNew){
+    public void getLastNew(CheckInstanceNew checkInstanceNew)throws StopBotException{
         new News(this, checkInstanceNew).getLastNew();
     }
 
-    public void getNews(CheckInstanceNew checkInstanceNew){
+    public void getNews(CheckInstanceNew checkInstanceNew)throws StopBotException{
         new News(this, checkInstanceNew).getNews();
     }
 
-    public void getLastNewVersion(float currentVersion, NewVersionAppInterface newVersionAppInterface){
+    public void getLastNewVersion(float currentVersion, NewVersionAppInterface newVersionAppInterface)throws StopBotException{
         new NewVersionApp(this, newVersionAppInterface).getInfoAboutANewVersionApp(currentVersion);
     }
 }

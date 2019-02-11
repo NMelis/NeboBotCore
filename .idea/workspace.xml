@@ -2,7 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d4a6cbe2-9d28-4bde-875b-7bfb808e8de8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/nebolife/bot/core/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/nebolife/bot/core/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/nebolife/bot/core/core/BotInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/nebolife/bot/core/core/BotInterface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/nebolife/bot/core/core/RequestCore.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/nebolife/bot/core/core/RequestCore.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/nebolife/bot/core/core/sites/NeboMobi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/nebolife/bot/core/core/sites/NeboMobi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/nebolife/bot/core/core/sites/PumpitRu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/nebolife/bot/core/core/sites/PumpitRu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/nebolife/bot/core/core/works/CollectRevenue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/nebolife/bot/core/core/works/CollectRevenue.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/nebolife/bot/core/core/works/Delivery.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/nebolife/bot/core/core/works/Delivery.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/nebolife/bot/core/core/works/Lift.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/nebolife/bot/core/core/works/Lift.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/nebolife/bot/core/core/works/Quests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/nebolife/bot/core/core/works/Quests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/nebolife/bot/core/core/works/RevenueBuild.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/nebolife/bot/core/core/works/RevenueBuild.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/nebolife/bot/core/helpers/CheckInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/nebolife/bot/core/helpers/CheckInfo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/nebolife/bot/core/helpers/NewVersionApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/nebolife/bot/core/helpers/NewVersionApp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/nebolife/bot/core/helpers/News.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/nebolife/bot/core/helpers/News.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -14,92 +28,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ru/nebolife/bot/core/listeners/CollectRevenueListener.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="38">
-              <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ru/nebolife/bot/core/listeners/CheckInstanceNew.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="57">
-              <caret line="3" column="17" selection-start-line="3" selection-start-column="17" selection-end-line="3" selection-end-column="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ru/nebolife/bot/core/listeners/BaseListener.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="38">
-              <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ru/nebolife/bot/core/listeners/CheckInstance.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="38">
-              <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ru/nebolife/bot/core/listeners/GetInfoListener.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="38">
-              <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ru/nebolife/bot/core/listeners/GetOntInfoListener.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="38">
-              <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ru/nebolife/bot/core/listeners/LiftGetAllDollarsListener.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="38">
-              <caret line="2" column="42" selection-start-line="2" selection-start-column="42" selection-end-line="2" selection-end-column="42" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="171">
-              <caret line="9" column="30" selection-start-line="9" selection-start-column="30" selection-end-line="9" selection-end-column="30" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ru/nebolife/bot/core/listeners/LiftListener.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="38">
-              <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ru/nebolife/bot/core/listeners/DeliveryListener.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="38">
-              <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+            <state relative-caret-position="152">
+              <caret line="8" column="25" selection-start-line="8" selection-start-column="25" selection-end-line="8" selection-end-column="25" />
             </state>
           </provider>
         </entry>
@@ -109,8 +42,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -136,35 +69,36 @@
         <option value="$PROJECT_DIR$/src/main/java/ru/nebolife/bot/core/listeners/CollectRevenueListener.java" />
         <option value="$PROJECT_DIR$/src/main/java/ru/nebolife/bot/core/listeners/DeliveryRevenueListener.java" />
         <option value="$PROJECT_DIR$/src/main/java/ru/nebolife/bot/core/listeners/DeliveryListener.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ru/nebolife/bot/core/core/works/CollectRevenue.java" />
         <option value="$PROJECT_DIR$/src/main/java/ru/nebolife/bot/core/listeners/LiftListener.java" />
         <option value="$PROJECT_DIR$/src/main/java/ru/nebolife/bot/core/listeners/RevenueBuildListener.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ru/nebolife/bot/core/core/works/Delivery.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ru/nebolife/bot/core/core/works/RevenueBuild.java" />
         <option value="$PROJECT_DIR$/src/main/java/ru/nebolife/bot/core/listeners/QuestsListener.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ru/nebolife/bot/core/core/works/Quests.java" />
         <option value="$PROJECT_DIR$/src/main/java/ru/nebolife/bot/core/core/BotInterface.java" />
         <option value="$PROJECT_DIR$/src/main/java/ru/nebolife/bot/core/core/CookieStore.java" />
         <option value="$PROJECT_DIR$/src/main/java/ru/nebolife/bot/core/helpers/FormParser.java" />
         <option value="$PROJECT_DIR$/src/main/java/ru/nebolife/bot/core/helpers/Check.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ru/nebolife/bot/core/helpers/CheckInfo.java" />
         <option value="$PROJECT_DIR$/src/main/java/ru/nebolife/bot/core/listeners/CheckInstanceNew.java" />
         <option value="$PROJECT_DIR$/src/main/java/ru/nebolife/bot/core/listeners/CheckInstance.java" />
         <option value="$PROJECT_DIR$/src/main/java/ru/nebolife/bot/core/listeners/NewVersionAppInterface.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ru/nebolife/bot/core/helpers/News.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ru/nebolife/bot/core/core/sites/NeboMobi.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ru/nebolife/bot/core/helpers/NewVersionApp.java" />
         <option value="$PROJECT_DIR$/src/main/java/ru/nebolife/bot/core/listeners/GetInfoListener.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ru/nebolife/bot/core/core/sites/PumpitRu.java" />
         <option value="$PROJECT_DIR$/src/main/java/ru/nebolife/bot/core/models/UserProfile.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ru/nebolife/bot/core/core/RequestCore.java" />
         <option value="$PROJECT_DIR$/src/main/java/ru/nebolife/bot/core/listeners/ProcessLiftAllListener.java" />
         <option value="$PROJECT_DIR$/src/main/java/ru/nebolife/bot/core/listeners/GetOntInfoListener.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ru/nebolife/bot/core/Main.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/ru/nebolife/bot/core/core/works/Lift.java" />
         <option value="$PROJECT_DIR$/src/main/java/ru/nebolife/bot/core/listeners/LiftGetAllDollarsListener.java" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/src/main/java/ru/nebolife/bot/core/helpers/StopBotException.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ru/nebolife/bot/core/core/works/Lift.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ru/nebolife/bot/core/core/works/CollectRevenue.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ru/nebolife/bot/core/core/works/Delivery.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ru/nebolife/bot/core/core/works/Quests.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ru/nebolife/bot/core/core/works/RevenueBuild.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ru/nebolife/bot/core/core/RequestCore.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ru/nebolife/bot/core/helpers/NewVersionApp.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ru/nebolife/bot/core/core/sites/PumpitRu.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ru/nebolife/bot/core/helpers/CheckInfo.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ru/nebolife/bot/core/core/sites/NeboMobi.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ru/nebolife/bot/core/helpers/News.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ru/nebolife/bot/core/Main.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
       </list>
     </option>
   </component>
@@ -329,6 +263,65 @@
               <item name="NeboBotCore" type="b2602c69:ProjectViewProjectNode" />
               <item name="NeboBotCore" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="NeboBotCore" type="b2602c69:ProjectViewProjectNode" />
+              <item name="NeboBotCore" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="NeboBotCore" type="b2602c69:ProjectViewProjectNode" />
+              <item name="NeboBotCore" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="NeboBotCore" type="b2602c69:ProjectViewProjectNode" />
+              <item name="NeboBotCore" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="NeboBotCore" type="b2602c69:ProjectViewProjectNode" />
+              <item name="NeboBotCore" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="core" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="NeboBotCore" type="b2602c69:ProjectViewProjectNode" />
+              <item name="NeboBotCore" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="core" type="462c0819:PsiDirectoryNode" />
+              <item name="core" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="NeboBotCore" type="b2602c69:ProjectViewProjectNode" />
+              <item name="NeboBotCore" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="core" type="462c0819:PsiDirectoryNode" />
+              <item name="core" type="462c0819:PsiDirectoryNode" />
+              <item name="works" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="NeboBotCore" type="b2602c69:ProjectViewProjectNode" />
+              <item name="NeboBotCore" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="core" type="462c0819:PsiDirectoryNode" />
+              <item name="helpers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="NeboBotCore" type="b2602c69:ProjectViewProjectNode" />
+              <item name="NeboBotCore" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -393,23 +386,22 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-1" y="25" width="1922" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1664888" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1664888" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.5256959" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.22400858" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3993576" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="8" visible="true" weight="0.3301179" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.3301179" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="10" weight="0.32976446" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.3290461" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.2497332" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -513,26 +505,8 @@ System.out.println(destArray);</expression-string>
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/ru/nebolife/bot/core/models/Login.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///usr/lib/jvm/jdk-11.0.2/lib/src.zip!/java.base/java/lang/String.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/ru/nebolife/bot/core/core/SingletonOkHttpClient.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/ru/nebolife/bot/core/core/Bot.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/ru/nebolife/bot/core/core/works/CollectRevenue.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="15" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ru/nebolife/bot/core/core/sites/OkRu.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="38">
@@ -544,16 +518,6 @@ System.out.println(destArray);</expression-string>
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="57">
           <caret line="3" column="17" selection-start-line="3" selection-start-column="17" selection-end-line="3" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ru/nebolife/bot/core/core/works/Quests.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="513">
-          <caret line="27" column="28" selection-start-line="27" selection-start-column="28" selection-end-line="27" selection-end-column="28" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -602,60 +566,10 @@ System.out.println(destArray);</expression-string>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ru/nebolife/bot/core/core/works/Delivery.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="18" column="24" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="24" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ru/nebolife/bot/core/core/works/RevenueBuild.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="17" column="16" selection-start-line="17" selection-start-column="16" selection-end-line="17" selection-end-column="16" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ru/nebolife/bot/core/helpers/CheckInfo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="26" column="9" selection-start-line="26" selection-start-column="9" selection-end-line="26" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ru/nebolife/bot/core/helpers/News.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="570">
-          <caret line="33" selection-start-line="33" selection-end-line="33" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/json/json/20180813/json-20180813.jar!/org/json/JSONObject.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="148">
           <caret line="382" column="18" selection-start-line="382" selection-start-column="18" selection-end-line="382" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ru/nebolife/bot/core/helpers/NewVersionApp.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="23" column="49" selection-start-line="23" selection-start-column="49" selection-end-line="23" selection-end-column="49" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -743,16 +657,6 @@ System.out.println(destArray);</expression-string>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ru/nebolife/bot/core/core/sites/PumpitRu.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="314">
-          <caret line="33" column="38" lean-forward="true" selection-start-line="33" selection-start-column="38" selection-end-line="33" selection-end-column="38" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ru/nebolife/bot/core/models/UserProfile.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="57">
@@ -760,65 +664,8 @@ System.out.println(destArray);</expression-string>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ru/nebolife/bot/core/core/sites/NeboMobi.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="430">
-          <caret line="48" column="21" selection-start-line="48" selection-start-column="21" selection-end-line="48" selection-end-column="21" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ru/nebolife/bot/core/core/RequestCore.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="173">
-          <caret line="32" column="16" selection-start-line="32" selection-start-column="16" selection-end-line="32" selection-end-column="16" />
-          <folding>
-            <element signature="method#RequestCore#0;class#RequestCore#0" />
-            <element signature="method#baseGo#0;class#RequestCore#0" />
-            <element signature="method#isExistsName#0;class#RequestCore#0" />
-            <element signature="n#!!block;n#getQuestsAward#0;n#RequestCore#0" />
-            <element signature="method#isUserVkBaned#0;class#RequestCore#0" />
-            <element signature="method#isCityBaned#0;class#RequestCore#0" />
-            <element signature="method#isUserBaned#0;class#RequestCore#0" />
-            <element signature="n#!!block;n#getNews#0;n#RequestCore#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/NeboBotCore.iml">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ru/nebolife/bot/core/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="618">
-          <caret line="37" column="48" selection-start-line="37" selection-start-column="48" selection-end-line="37" selection-end-column="48" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="8" column="18" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ru/nebolife/bot/core/core/works/Lift.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1463">
-          <caret line="149" column="49" selection-start-line="149" selection-start-column="49" selection-end-line="149" selection-end-column="49" />
-          <folding>
-            <element signature="method#info#0;class#Lift#0" />
-            <element signature="method#firstInfo#0;class#Lift#0" />
-            <element signature="method#getSpaceToLift#0;class#Lift#0" />
-            <element signature="method#run#0;class#Lift#0" />
-          </folding>
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ru/nebolife/bot/core/listeners/NewVersionAppInterface.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -869,13 +716,6 @@ System.out.println(destArray);</expression-string>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ru/nebolife/bot/core/listeners/CollectRevenueListener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ru/nebolife/bot/core/listeners/DeliveryListener.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="38">
@@ -915,6 +755,176 @@ System.out.println(destArray);</expression-string>
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="171">
           <caret line="9" column="30" selection-start-line="9" selection-start-column="30" selection-end-line="9" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/nebolife/bot/core/listeners/CollectRevenueListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/Programms/jdk1.8.0_201/src.zip!/java/lang/SuppressWarnings.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="53" column="18" selection-start-line="53" selection-start-column="18" selection-end-line="53" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/nebolife/bot/core/core/works/CollectRevenue.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="17" column="60" selection-start-line="17" selection-start-column="60" selection-end-line="17" selection-end-column="60" />
+          <folding>
+            <element signature="method#CollectRevenue#0;class#CollectRevenue#0" />
+            <element signature="method#run#0;class#CollectRevenue#0" />
+            <element signature="e#642#1117#1" />
+            <element signature="method#getSelectedProductForBuy#0;class#CollectRevenue#0" />
+            <element signature="e#1646#1778#1" />
+            <element signature="e#1808#1940#1" />
+            <element signature="e#1944#2076#1" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/nebolife/bot/core/core/works/Delivery.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="18" column="45" selection-start-line="18" selection-start-column="45" selection-end-line="18" selection-end-column="45" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/nebolife/bot/core/core/works/Quests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="18" column="51" selection-start-line="18" selection-start-column="51" selection-end-line="18" selection-end-column="51" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/nebolife/bot/core/helpers/StopBotException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/nebolife/bot/core/core/RequestCore.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="166" column="98" selection-start-line="166" selection-start-column="98" selection-end-line="166" selection-end-column="98" />
+          <folding>
+            <element signature="method#RequestCore#0;class#RequestCore#0" />
+            <element signature="e#1083#1084#0" expanded="true" />
+            <element signature="e#1117#1118#0" expanded="true" />
+            <element signature="method#baseGo#0;class#RequestCore#0" />
+            <element signature="n#!!block;n#getElement#0;n#RequestCore#0" />
+            <element signature="method#getElementText#0;class#RequestCore#0" />
+            <element signature="method#getElementInt#0;class#RequestCore#0" />
+            <element signature="method#isExistsName#0;class#RequestCore#0" />
+            <element signature="method#firstLoadInfo#0;class#RequestCore#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/nebolife/bot/core/helpers/NewVersionApp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="456">
+          <caret line="24" column="27" selection-start-line="24" selection-start-column="27" selection-end-line="24" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/nebolife/bot/core/core/sites/PumpitRu.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="313">
+          <caret line="22" column="64" selection-start-line="22" selection-start-column="48" selection-end-line="22" selection-end-column="64" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/nebolife/bot/core/helpers/CheckInfo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="522">
+          <caret line="44" column="67" selection-start-line="44" selection-start-column="67" selection-end-line="44" selection-end-column="67" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/nebolife/bot/core/core/sites/NeboMobi.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="237">
+          <caret line="27" column="15" selection-start-line="27" selection-start-column="15" selection-end-line="27" selection-end-column="15" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/nebolife/bot/core/helpers/News.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="18" column="52" selection-start-line="18" selection-start-column="52" selection-end-line="18" selection-end-column="52" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/nebolife/bot/core/core/works/RevenueBuild.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/nebolife/bot/core/core/works/Lift.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="532">
+          <caret line="166" lean-forward="true" selection-start-line="166" selection-end-line="166" />
+          <folding>
+            <element signature="method#info#0;class#Lift#0" />
+            <element signature="method#firstInfo#0;class#Lift#0" />
+            <element signature="method#getSpaceToLift#0;class#Lift#0" />
+            <element signature="method#run#0;class#Lift#0" />
+            <element signature="method#payAllDollars#0;class#Lift#0" />
+            <element signature="method#processLiftAll#0;class#Lift#0" />
+            <element signature="method#activateLift#0;class#Lift#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/nebolife/bot/core/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="513">
+          <caret line="27" column="80" selection-start-line="27" selection-start-column="80" selection-end-line="27" selection-end-column="80" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1832#2027#0" expanded="true" />
+            <element signature="e#2026#2027#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="8" column="25" selection-start-line="8" selection-start-column="25" selection-end-line="8" selection-end-column="25" />
         </state>
       </provider>
     </entry>

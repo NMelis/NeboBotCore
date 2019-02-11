@@ -1,22 +1,17 @@
 package ru.nebolife.bot.core;
 
 import ru.nebolife.bot.core.core.sites.NeboMobi;
-import ru.nebolife.bot.core.core.sites.PumpitRu;
 import ru.nebolife.bot.core.core.works.Lift;
-import ru.nebolife.bot.core.helpers.NewVersionApp;
-import ru.nebolife.bot.core.listeners.GetInfoListener;
-import ru.nebolife.bot.core.listeners.GetOntInfoListener;
+import ru.nebolife.bot.core.helpers.StopBotException;
 import ru.nebolife.bot.core.listeners.LiftGetAllDollarsListener;
-import ru.nebolife.bot.core.listeners.ProcessLiftAllListener;
 
-import javax.annotation.processing.SupportedSourceVersion;
 import java.io.IOException;
 
 
 public class Main {
     public static void main(String[] args) {
 
-        NeboMobi bot = new NeboMobi("Robert Williams", "F2XlxAKku#");
+        final NeboMobi bot = new NeboMobi("Robert Williams", "F2XlxAKku#");
         try {
             bot.login();
             final Lift lift = bot.Lift();
@@ -41,6 +36,8 @@ public class Main {
 
         } catch (IOException e) {
             System.out.println("Не правильный пароль или логинчик");
+        } catch (StopBotException e) {
+            System.out.println("Бот остановлен");
         }
     }
 }

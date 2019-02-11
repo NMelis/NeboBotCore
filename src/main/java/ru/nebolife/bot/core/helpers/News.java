@@ -16,14 +16,14 @@ public class News {
         this.requestCore.baseUrl = "http://nebo-bot.s3-website.eu-west-3.amazonaws.com/";
     }
 
-    public void getLastNew() {
+    public void getLastNew() throws StopBotException{
         this.requestCore.go("lastNew.json");
         JSONObject Jobject = new JSONObject(this.requestCore.doc.body().text());
         String new_ = (String) Jobject.get("new");
         checkInstanceNew.onResponse(new_);
     }
 
-    public void getNews() {
+    public void getNews()throws StopBotException {
         this.requestCore.go("news.json");
         JSONObject Jobject = new JSONObject(this.requestCore.doc.body().text());
         JSONArray news = Jobject.getJSONArray("news");

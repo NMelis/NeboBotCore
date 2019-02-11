@@ -5,6 +5,7 @@ import org.jsoup.Jsoup;
 import ru.nebolife.bot.core.core.BotInterface;
 import ru.nebolife.bot.core.core.RequestCore;
 import ru.nebolife.bot.core.helpers.FormParser;
+import ru.nebolife.bot.core.helpers.StopBotException;
 
 import java.io.IOException;
 import java.util.HashMap;
@@ -22,7 +23,7 @@ public class NeboMobi extends RequestCore implements BotInterface {
         this.password = password;
     }
 
-    public NeboMobi login() throws IOException {
+    public NeboMobi login() throws IOException, StopBotException {
         this.go("/welcome");
         this.go("/login");
         HashMap<String, String> postData = FormParser.parse(this.doc)

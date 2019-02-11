@@ -4,6 +4,7 @@ import okhttp3.*;
 import org.jsoup.Jsoup;
 import ru.nebolife.bot.core.core.BotInterface;
 import ru.nebolife.bot.core.core.RequestCore;
+import ru.nebolife.bot.core.helpers.StopBotException;
 
 import java.io.IOException;
 
@@ -19,7 +20,7 @@ public class PumpitRu extends RequestCore implements BotInterface {
     }
 
     @Override
-    public PumpitRu login() throws IOException {
+    public PumpitRu login() throws IOException, StopBotException {
         this.go("/yb/5516820337/play_app/?app_id=36");
         RequestBody formBody = new FormBody.Builder()
                 .add("login", this.nickName)

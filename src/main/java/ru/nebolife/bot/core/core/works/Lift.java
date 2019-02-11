@@ -2,10 +2,11 @@ package ru.nebolife.bot.core.core.works;
 
 import org.jsoup.nodes.Element;
 import ru.nebolife.bot.core.core.RequestCore;
+import ru.nebolife.bot.core.helpers.StopBotException;
 import ru.nebolife.bot.core.listeners.*;
 
 
-public class Lift {
+public class Lift  {
     RequestCore requestCore;
     private String highСost;
     public static final boolean FIRST = true;
@@ -15,7 +16,7 @@ public class Lift {
         this.requestCore = requestCore;
     }
 
-    public void info(){
+    public void info() throws StopBotException {
         this.requestCore.go("/lift");
         firstInfo();
         this.requestCore.go("/lobby");
@@ -37,7 +38,7 @@ public class Lift {
         this.requestCore.profile.liftVisitors = this.requestCore.getElementInt("div.main>div>span.white", FIRST);
     }
 
-    private int getSpaceToLift(){
+    private int getSpaceToLift() {
         try{
             String element = this.requestCore.getElementText("div.main>div>div>div.nfl>div>span", LAST);
             StringBuilder nums = new StringBuilder();
@@ -56,7 +57,7 @@ public class Lift {
         }
     }
 
-    public void run(LiftListener liftListener) {
+    public void run(LiftListener liftListener) throws StopBotException {
         this.requestCore.go("/lift");
         firstInfo();
         while (true) {
@@ -76,7 +77,7 @@ public class Lift {
         }
     }
 
-    public void payAllDollars(LiftGetAllDollarsListener liftGetAllDollarsListener) {
+    public void payAllDollars(LiftGetAllDollarsListener liftGetAllDollarsListener) throws StopBotException {
         this.requestCore.go("/lift");
         firstInfo();
         try {
@@ -116,7 +117,7 @@ public class Lift {
 
     }
 
-    public void processLiftAll(GetOntInfoListener listener){
+    public void processLiftAll(GetOntInfoListener listener) throws StopBotException{
         this.requestCore.go("/lift");
         firstInfo();
         Element processLiftAllLink = this.requestCore.doc.select("a.tdu[href*=:processLiftAll:link::ILinkListener]").first();
@@ -141,8 +142,7 @@ public class Lift {
 
     }
 
-    //
-    public void activateLift(GetOntInfoListener listener){
+    public void activateLift(GetOntInfoListener listener) throws StopBotException{
         this.requestCore.go("/lift");
         firstInfo();
         Element activateLiftLink = this.requestCore.doc.select("a.tdu[href*=:activateLiftLink:link::ILinkListener::]").first();
@@ -162,4 +162,5 @@ public class Lift {
         }
 
     }
+
 }
