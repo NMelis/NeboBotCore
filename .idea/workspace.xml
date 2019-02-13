@@ -3,20 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="d4a6cbe2-9d28-4bde-875b-7bfb808e8de8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ru/nebolife/bot/core/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/nebolife/bot/core/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/nebolife/bot/core/core/BotInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/nebolife/bot/core/core/BotInterface.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ru/nebolife/bot/core/core/RequestCore.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/nebolife/bot/core/core/RequestCore.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/nebolife/bot/core/core/sites/NeboMobi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/nebolife/bot/core/core/sites/NeboMobi.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/nebolife/bot/core/core/sites/PumpitRu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/nebolife/bot/core/core/sites/PumpitRu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/nebolife/bot/core/core/works/CollectRevenue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/nebolife/bot/core/core/works/CollectRevenue.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/nebolife/bot/core/core/works/Delivery.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/nebolife/bot/core/core/works/Delivery.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ru/nebolife/bot/core/core/works/Lift.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/nebolife/bot/core/core/works/Lift.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/nebolife/bot/core/core/works/Quests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/nebolife/bot/core/core/works/Quests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/nebolife/bot/core/core/works/RevenueBuild.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/nebolife/bot/core/core/works/RevenueBuild.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/nebolife/bot/core/helpers/CheckInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/nebolife/bot/core/helpers/CheckInfo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/nebolife/bot/core/helpers/NewVersionApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/nebolife/bot/core/helpers/NewVersionApp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/nebolife/bot/core/helpers/News.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/nebolife/bot/core/helpers/News.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -29,10 +18,32 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ru/nebolife/bot/core/core/works/Lift.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="152">
-              <caret line="8" column="25" selection-start-line="8" selection-start-column="25" selection-end-line="8" selection-end-column="25" />
+            <state relative-caret-position="520">
+              <caret line="179" column="86" selection-start-line="179" selection-start-column="86" selection-end-line="179" selection-end-column="86" />
+              <folding>
+                <element signature="method#info#0;class#Lift#0" />
+                <element signature="method#firstInfo#0;class#Lift#0" />
+                <element signature="method#getSpaceToLift#0;class#Lift#0" />
+                <element signature="method#run#0;class#Lift#0" />
+                <element signature="method#payAllDollars#0;class#Lift#0" />
+                <element signature="method#processLiftAll#0;class#Lift#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ru/nebolife/bot/core/Main.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="389">
+              <caret line="30" column="23" lean-forward="true" selection-start-line="30" selection-start-column="23" selection-end-line="35" selection-end-column="17" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1712#1900#0" expanded="true" />
+                <element signature="e#1899#1900#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -86,19 +97,19 @@
         <option value="$PROJECT_DIR$/src/main/java/ru/nebolife/bot/core/listeners/LiftGetAllDollarsListener.java" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/src/main/java/ru/nebolife/bot/core/helpers/StopBotException.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ru/nebolife/bot/core/core/works/Lift.java" />
         <option value="$PROJECT_DIR$/src/main/java/ru/nebolife/bot/core/core/works/CollectRevenue.java" />
         <option value="$PROJECT_DIR$/src/main/java/ru/nebolife/bot/core/core/works/Delivery.java" />
         <option value="$PROJECT_DIR$/src/main/java/ru/nebolife/bot/core/core/works/Quests.java" />
         <option value="$PROJECT_DIR$/src/main/java/ru/nebolife/bot/core/core/works/RevenueBuild.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ru/nebolife/bot/core/core/RequestCore.java" />
         <option value="$PROJECT_DIR$/src/main/java/ru/nebolife/bot/core/helpers/NewVersionApp.java" />
         <option value="$PROJECT_DIR$/src/main/java/ru/nebolife/bot/core/core/sites/PumpitRu.java" />
         <option value="$PROJECT_DIR$/src/main/java/ru/nebolife/bot/core/helpers/CheckInfo.java" />
         <option value="$PROJECT_DIR$/src/main/java/ru/nebolife/bot/core/core/sites/NeboMobi.java" />
         <option value="$PROJECT_DIR$/src/main/java/ru/nebolife/bot/core/helpers/News.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ru/nebolife/bot/core/Main.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/ru/nebolife/bot/core/core/RequestCore.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ru/nebolife/bot/core/Main.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ru/nebolife/bot/core/core/works/Lift.java" />
       </list>
     </option>
   </component>
@@ -148,30 +159,57 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane">
+      <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="NeboBotCore" type="58d84e3e:PackageViewProjectNode" />
-              <item name="NeboBotCore" type="616d4139:PackageViewModuleNode" />
+              <item name="NeboBotCore" type="b2602c69:ProjectViewProjectNode" />
+              <item name="NeboBotCore" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="NeboBotCore" type="58d84e3e:PackageViewProjectNode" />
-              <item name="NeboBotCore" type="616d4139:PackageViewModuleNode" />
-              <item name="ru.nebolife.bot.core" type="1f31426a:PackageElementNode" />
+              <item name="NeboBotCore" type="b2602c69:ProjectViewProjectNode" />
+              <item name="NeboBotCore" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="NeboBotCore" type="58d84e3e:PackageViewProjectNode" />
-              <item name="NeboBotCore" type="616d4139:PackageViewModuleNode" />
-              <item name="ru.nebolife.bot.core" type="1f31426a:PackageElementNode" />
-              <item name="core" type="1f31426a:PackageElementNode" />
+              <item name="NeboBotCore" type="b2602c69:ProjectViewProjectNode" />
+              <item name="NeboBotCore" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="NeboBotCore" type="58d84e3e:PackageViewProjectNode" />
-              <item name="NeboBotCore" type="616d4139:PackageViewModuleNode" />
-              <item name="ru.nebolife.bot.core" type="1f31426a:PackageElementNode" />
-              <item name="core" type="1f31426a:PackageElementNode" />
-              <item name="works" type="1f31426a:PackageElementNode" />
+              <item name="NeboBotCore" type="b2602c69:ProjectViewProjectNode" />
+              <item name="NeboBotCore" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="NeboBotCore" type="b2602c69:ProjectViewProjectNode" />
+              <item name="NeboBotCore" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="core" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="NeboBotCore" type="b2602c69:ProjectViewProjectNode" />
+              <item name="NeboBotCore" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="core" type="462c0819:PsiDirectoryNode" />
+              <item name="core" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="NeboBotCore" type="b2602c69:ProjectViewProjectNode" />
+              <item name="NeboBotCore" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="core" type="462c0819:PsiDirectoryNode" />
+              <item name="core" type="462c0819:PsiDirectoryNode" />
+              <item name="works" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -256,71 +294,30 @@
           <select />
         </subPane>
       </pane>
-      <pane id="ProjectPane">
+      <pane id="PackagesPane">
         <subPane>
           <expand>
             <path>
-              <item name="NeboBotCore" type="b2602c69:ProjectViewProjectNode" />
-              <item name="NeboBotCore" type="462c0819:PsiDirectoryNode" />
+              <item name="NeboBotCore" type="58d84e3e:PackageViewProjectNode" />
+              <item name="NeboBotCore" type="616d4139:PackageViewModuleNode" />
             </path>
             <path>
-              <item name="NeboBotCore" type="b2602c69:ProjectViewProjectNode" />
-              <item name="NeboBotCore" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="NeboBotCore" type="58d84e3e:PackageViewProjectNode" />
+              <item name="NeboBotCore" type="616d4139:PackageViewModuleNode" />
+              <item name="ru.nebolife.bot.core" type="1f31426a:PackageElementNode" />
             </path>
             <path>
-              <item name="NeboBotCore" type="b2602c69:ProjectViewProjectNode" />
-              <item name="NeboBotCore" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="NeboBotCore" type="58d84e3e:PackageViewProjectNode" />
+              <item name="NeboBotCore" type="616d4139:PackageViewModuleNode" />
+              <item name="ru.nebolife.bot.core" type="1f31426a:PackageElementNode" />
+              <item name="core" type="1f31426a:PackageElementNode" />
             </path>
             <path>
-              <item name="NeboBotCore" type="b2602c69:ProjectViewProjectNode" />
-              <item name="NeboBotCore" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="NeboBotCore" type="b2602c69:ProjectViewProjectNode" />
-              <item name="NeboBotCore" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="core" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="NeboBotCore" type="b2602c69:ProjectViewProjectNode" />
-              <item name="NeboBotCore" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="core" type="462c0819:PsiDirectoryNode" />
-              <item name="core" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="NeboBotCore" type="b2602c69:ProjectViewProjectNode" />
-              <item name="NeboBotCore" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="core" type="462c0819:PsiDirectoryNode" />
-              <item name="core" type="462c0819:PsiDirectoryNode" />
-              <item name="works" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="NeboBotCore" type="b2602c69:ProjectViewProjectNode" />
-              <item name="NeboBotCore" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="core" type="462c0819:PsiDirectoryNode" />
-              <item name="helpers" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="NeboBotCore" type="b2602c69:ProjectViewProjectNode" />
-              <item name="NeboBotCore" type="462c0819:PsiDirectoryNode" />
-              <item name="target" type="462c0819:PsiDirectoryNode" />
+              <item name="NeboBotCore" type="58d84e3e:PackageViewProjectNode" />
+              <item name="NeboBotCore" type="616d4139:PackageViewModuleNode" />
+              <item name="ru.nebolife.bot.core" type="1f31426a:PackageElementNode" />
+              <item name="core" type="1f31426a:PackageElementNode" />
+              <item name="works" type="1f31426a:PackageElementNode" />
             </path>
           </expand>
           <select />
@@ -386,26 +383,27 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-1" y="25" width="1922" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1664888" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1696905" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.22400858" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.24651662" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3993576" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.3301179" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.3301179" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.3290461" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.2497332" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Maven" order="3" visible="true" weight="0.12059765" />
+      <window_info anchor="right" id="Maven" order="3" weight="0.12059765" />
       <window_info anchor="right" id="Palette&#9;" order="4" />
     </layout>
     <layout-to-restore>
@@ -723,13 +721,6 @@ System.out.println(destArray);</expression-string>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ru/nebolife/bot/core/listeners/GetInfoListener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ru/nebolife/bot/core/listeners/GetOntInfoListener.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="38">
@@ -815,24 +806,6 @@ System.out.println(destArray);</expression-string>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ru/nebolife/bot/core/core/RequestCore.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="166" column="98" selection-start-line="166" selection-start-column="98" selection-end-line="166" selection-end-column="98" />
-          <folding>
-            <element signature="method#RequestCore#0;class#RequestCore#0" />
-            <element signature="e#1083#1084#0" expanded="true" />
-            <element signature="e#1117#1118#0" expanded="true" />
-            <element signature="method#baseGo#0;class#RequestCore#0" />
-            <element signature="n#!!block;n#getElement#0;n#RequestCore#0" />
-            <element signature="method#getElementText#0;class#RequestCore#0" />
-            <element signature="method#getElementInt#0;class#RequestCore#0" />
-            <element signature="method#isExistsName#0;class#RequestCore#0" />
-            <element signature="method#firstLoadInfo#0;class#RequestCore#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ru/nebolife/bot/core/helpers/NewVersionApp.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="456">
@@ -893,10 +866,54 @@ System.out.println(destArray);</expression-string>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="456">
+          <caret line="24" column="64" lean-forward="true" selection-start-line="24" selection-start-column="64" selection-end-line="24" selection-end-column="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/nebolife/bot/core/listeners/GetInfoListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/nebolife/bot/core/core/RequestCore.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="159" column="55" selection-start-line="159" selection-start-column="55" selection-end-line="159" selection-end-column="55" />
+          <folding>
+            <element signature="method#RequestCore#0;class#RequestCore#0" />
+            <element signature="e#1083#1084#0" expanded="true" />
+            <element signature="e#1117#1118#0" expanded="true" />
+            <element signature="method#baseGo#0;class#RequestCore#0" />
+            <element signature="n#!!block;n#getElement#0;n#RequestCore#0" />
+            <element signature="method#getElementText#0;class#RequestCore#0" />
+            <element signature="method#getElementInt#0;class#RequestCore#0" />
+            <element signature="method#isExistsName#0;class#RequestCore#0" />
+            <element signature="method#firstLoadInfo#0;class#RequestCore#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/nebolife/bot/core/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="389">
+          <caret line="30" column="23" lean-forward="true" selection-start-line="30" selection-start-column="23" selection-end-line="35" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1712#1900#0" expanded="true" />
+            <element signature="e#1899#1900#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ru/nebolife/bot/core/core/works/Lift.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="532">
-          <caret line="166" lean-forward="true" selection-start-line="166" selection-end-line="166" />
+        <state relative-caret-position="520">
+          <caret line="179" column="86" selection-start-line="179" selection-start-column="86" selection-end-line="179" selection-end-column="86" />
           <folding>
             <element signature="method#info#0;class#Lift#0" />
             <element signature="method#firstInfo#0;class#Lift#0" />
@@ -904,27 +921,7 @@ System.out.println(destArray);</expression-string>
             <element signature="method#run#0;class#Lift#0" />
             <element signature="method#payAllDollars#0;class#Lift#0" />
             <element signature="method#processLiftAll#0;class#Lift#0" />
-            <element signature="method#activateLift#0;class#Lift#0" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ru/nebolife/bot/core/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="513">
-          <caret line="27" column="80" selection-start-line="27" selection-start-column="80" selection-end-line="27" selection-end-column="80" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1832#2027#0" expanded="true" />
-            <element signature="e#2026#2027#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="8" column="25" selection-start-line="8" selection-start-column="25" selection-end-line="8" selection-end-column="25" />
         </state>
       </provider>
     </entry>

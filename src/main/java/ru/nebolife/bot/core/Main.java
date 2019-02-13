@@ -3,6 +3,7 @@ package ru.nebolife.bot.core;
 import ru.nebolife.bot.core.core.sites.NeboMobi;
 import ru.nebolife.bot.core.core.works.Lift;
 import ru.nebolife.bot.core.helpers.StopBotException;
+import ru.nebolife.bot.core.listeners.GetOntInfoListener;
 import ru.nebolife.bot.core.listeners.LiftGetAllDollarsListener;
 
 import java.io.IOException;
@@ -11,7 +12,7 @@ import java.io.IOException;
 public class Main {
     public static void main(String[] args) {
 
-        final NeboMobi bot = new NeboMobi("Robert Williams", "F2XlxAKku#");
+        final NeboMobi bot = new NeboMobi("Dddx", "qwe123");
         try {
             bot.login();
             final Lift lift = bot.Lift();
@@ -27,7 +28,13 @@ public class Main {
             System.out.println("Вместимость лифта: " + bot.profile.liftSpace);
             System.out.println("Доступно ли увеличение скорости лифта: " + bot.profile.liftIsCanUpgradeSpeed);
             System.out.println("Доступно ли увеличение вместимости лифта: " + bot.profile.liftIsCanUpgradeSpace);
-            lift.payAllDollars(new LiftGetAllDollarsListener() {
+            lift.payAllDollars(new GetOntInfoListener() {
+                @Override
+                public void response(String message) {
+                    System.out.println(message);
+                }
+            });
+            lift.lifter15(new GetOntInfoListener() {
                 @Override
                 public void response(String message) {
                     System.out.println(message);

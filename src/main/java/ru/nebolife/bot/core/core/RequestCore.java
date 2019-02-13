@@ -156,8 +156,8 @@ public class RequestCore {
         new Lift(this).run(liftListener);
     }
 
-    public void payAllDollars(LiftGetAllDollarsListener liftGetAllDollarsListener)throws StopBotException{
-        new Lift(this).payAllDollars(liftGetAllDollarsListener);
+    public void payAllDollars(GetOntInfoListener getOntInfoListener)throws StopBotException{
+        new Lift(this).payAllDollars(getOntInfoListener);
     }
 
     public void getQuestsAward(QuestsListener questsListener)throws StopBotException{

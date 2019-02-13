@@ -1,5 +1,6 @@
 package ru.nebolife.bot.core.core.works;
 
+import javafx.scene.paint.Stop;
 import org.jsoup.nodes.Element;
 import ru.nebolife.bot.core.core.RequestCore;
 import ru.nebolife.bot.core.helpers.StopBotException;
@@ -77,41 +78,41 @@ public class Lift  {
         }
     }
 
-    public void payAllDollars(LiftGetAllDollarsListener liftGetAllDollarsListener) throws StopBotException {
+    public void payAllDollars(GetOntInfoListener getOntInfoListener) throws StopBotException {
         this.requestCore.go("/lift");
         firstInfo();
         try {
             int alreadyGiveDollars = Integer.parseInt(this.requestCore.doc.select("div.cntr.small>span>span").first().text());
             int canAllGiveDollars = Integer.parseInt(this.requestCore.doc.select("div.cntr.small>span>span").last().text());
             if (alreadyGiveDollars == canAllGiveDollars){
-                liftGetAllDollarsListener.response("Уже все баксы были получены");
+                getOntInfoListener.response("Уже все баксы были получены");
                 return;
             }
         }catch (NullPointerException ignored){
-            liftGetAllDollarsListener.response("Похоже вы уже все баксы были получили");
+            getOntInfoListener.response("Похоже вы уже все баксы были получили");
             return;
         }
 
         this.requestCore.go("/change");
         Element payAllLink = this.requestCore.doc.select("div>span>a[href*=payAllLink:link::ILinkListener::]").first();
         if (payAllLink == null) {
-            liftGetAllDollarsListener.response("Уже все баксы были получены");
+            getOntInfoListener.response("Уже все баксы были получены");
             return;
         }
         this.requestCore.go(payAllLink.attr("href"));
 
         Element confirmLink = this.requestCore.doc.select("a[href*=:confirmLink::ILinkListener::]").first();
         if (confirmLink == null) {
-            liftGetAllDollarsListener.response("Походу у вас вдруг монеты кончились");
+            getOntInfoListener.response("Походу у вас вдруг монеты кончились");
             return;
         }
         this.requestCore.go(confirmLink.attr("href"));
         Element feedbackPanelINFO = this.requestCore.doc.select("span.feedbackPanelINFO").first();
         if (feedbackPanelINFO != null){
-            liftGetAllDollarsListener.response(feedbackPanelINFO.text());
+            getOntInfoListener.response(feedbackPanelINFO.text());
             return;
         }
-        liftGetAllDollarsListener.response("Илон макс черт подери");
+        getOntInfoListener.response("Илон макс черт подери");
 
 
 
@@ -163,4 +164,19 @@ public class Lift  {
 
     }
 
+    public void lifter15(GetOntInfoListener getOntInfoListener) throws StopBotException {
+        this.requestCore.go("/lift/results");
+        Element price = this.requestCore.doc.select("a.tdu[href*=:lifterPanel:doLifterLink:link::ILinkListener]").first();
+        if (price == null){
+            getOntInfoListener.response("Пока не доступен лифтер, вам нужно сначало выкупить все баксы с лифта");
+            return;
+        }
+        this.requestCore.go(price.attr("href"));
+        Element info1 = this.requestCore.doc.select("div.main>div>div.ntfy.notify").first();
+        if (info1 != null) getOntInfoListener.response(info1.text());
+        Element info2 = this.requestCore.doc.select("div.main>div>div.ntfy.white").first();
+        if (info2 != null) getOntInfoListener.response(info2.text());
+        Element feedbackPanelERROR = this.requestCore.doc.select("span.feedbackPanelERROR").first();
+        if (feedbackPanelERROR != null) getOntInfoListener.response(feedbackPanelERROR.text());
+    }
 }
