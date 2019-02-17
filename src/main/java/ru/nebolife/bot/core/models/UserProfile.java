@@ -12,4 +12,5 @@ public class UserProfile {
     public int liftSpace = 0;
     public boolean liftIsCanUpgradeSpeed = false;
     public boolean liftIsCanUpgradeSpace = false;
+    public City city = new City();
 }

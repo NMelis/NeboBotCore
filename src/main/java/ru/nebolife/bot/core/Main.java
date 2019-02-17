@@ -1,8 +1,10 @@
 package ru.nebolife.bot.core;
 
 import ru.nebolife.bot.core.core.sites.NeboMobi;
+import ru.nebolife.bot.core.core.works.City;
 import ru.nebolife.bot.core.core.works.Lift;
 import ru.nebolife.bot.core.helpers.StopBotException;
+import ru.nebolife.bot.core.listeners.GetInfoListener;
 import ru.nebolife.bot.core.listeners.GetOntInfoListener;
 import ru.nebolife.bot.core.listeners.LiftGetAllDollarsListener;
 
@@ -13,30 +15,18 @@ public class Main {
     public static void main(String[] args) {
 
         final NeboMobi bot = new NeboMobi("Dddx", "qwe123");
+        bot.logEnabled(false);
         try {
             bot.login();
-            final Lift lift = bot.Lift();
-            lift.info();
-            System.out.println("nickName: " + bot.profile.nickName);
-            System.out.println("coin: " + bot.profile.coin);
-            System.out.println("gold: " + bot.profile.gold);
-            System.out.println("lvl: " + bot.profile.lvl);
-            System.out.println("Полученные баксики: " + bot.profile.liftAlreadyGiveDollars);
-            System.out.println("Сколько всего баксов: " + bot.profile.liftCanAllGiveDollars);
-            System.out.println("Людей чейчас в лифте: " + bot.profile.liftVisitors);
-            System.out.println("Скорость лифта: " + bot.profile.liftL);
-            System.out.println("Вместимость лифта: " + bot.profile.liftSpace);
-            System.out.println("Доступно ли увеличение скорости лифта: " + bot.profile.liftIsCanUpgradeSpeed);
-            System.out.println("Доступно ли увеличение вместимости лифта: " + bot.profile.liftIsCanUpgradeSpace);
-            lift.payAllDollars(new GetOntInfoListener() {
+            final City city = bot.City();
+            city.getInfo();
+            System.out.println(bot.profile.city.name);
+            final int[] invite = {0};
+            city.runInvite(10, 90, 0, 4000, new GetOntInfoListener() {
                 @Override
                 public void response(String message) {
-                    System.out.println(message);
-                }
-            });
-            lift.lifter15(new GetOntInfoListener() {
-                @Override
-                public void response(String message) {
+                    if (message.contains("Приглашен")) invite[0]++;
+                    if (invite[0] == 50) bot.stop();
                     System.out.println(message);
                 }
             });

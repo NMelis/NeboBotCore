@@ -19,6 +19,7 @@ import ru.nebolife.bot.core.models.UserProfile;
 import javax.swing.text.html.parser.ContentModel;
 import java.io.IOException;
 import java.net.URL;
+import java.util.List;
 
 public class RequestCore {
     public String baseUrl;
@@ -26,6 +27,8 @@ public class RequestCore {
     protected OkHttpClient client;
     public UserProfile profile = new UserProfile();
     public boolean isStop = false;
+    public Response currentResponse;
+    private boolean logShow = false;
 
     public RequestCore(String baseUrl) {
         this.baseUrl = baseUrl;
@@ -40,18 +43,22 @@ public class RequestCore {
         this.isStop = false;
     }
 
+    public boolean isEquals(String title){
+        if (this.doc == null) return false;
+        return this.doc.title().equals(title);
+    }
 
     public void go(String path) throws StopBotException {
         if (this.isStop) { throw new StopBotException();}
         try {
             Thread.sleep(700);
             String url = new URL(new URL(this.baseUrl), path).toString();
-            System.out.println("go to: " + url);
+            if (logShow) System.out.println("go to: " + url);
             Request request = new Request.Builder()
                     .url(url)
                     .build();
-            Response response = client.newCall(request).execute();
-            ResponseBody body = response.body();
+            this.currentResponse = client.newCall(request).execute();
+            ResponseBody body = this.currentResponse.body();
             if (body != null) {
                 doc = Jsoup.parse(body.string());
             }
@@ -80,7 +87,7 @@ public class RequestCore {
 
     }
 
-    private Elements getElement(String cssSelect){
+    public Elements getElement(String cssSelect){
         return this.doc.select(cssSelect);
     }
 
@@ -186,5 +193,13 @@ public class RequestCore {
 
     public void getLastNewVersion(float currentVersion, NewVersionAppInterface newVersionAppInterface)throws StopBotException{
         new NewVersionApp(this, newVersionAppInterface).getInfoAboutANewVersionApp(currentVersion);
+    }
+
+    public City City() {
+        return new City(this);
+    }
+
+    public void logEnabled(boolean b) {
+        this.logShow = b;
     }
 }
