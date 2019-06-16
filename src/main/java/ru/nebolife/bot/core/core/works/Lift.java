@@ -1,6 +1,5 @@
 package ru.nebolife.bot.core.core.works;
 
-import javafx.scene.paint.Stop;
 import org.jsoup.nodes.Element;
 import ru.nebolife.bot.core.core.RequestCore;
 import ru.nebolife.bot.core.helpers.StopBotException;
