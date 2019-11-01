@@ -13,4 +13,6 @@ public class UserProfile {
     public boolean liftIsCanUpgradeSpeed = false;
     public boolean liftIsCanUpgradeSpace = false;
     public City city = new City();
+    public Shop shop = new Shop();
+    public Hotel hotel = new Hotel();
 }

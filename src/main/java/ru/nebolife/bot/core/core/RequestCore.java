@@ -8,6 +8,7 @@ import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
+import ru.nebolife.bot.core.core.hooks.*;
 import ru.nebolife.bot.core.core.works.*;
 import ru.nebolife.bot.core.helpers.CheckInfo;
 import ru.nebolife.bot.core.helpers.NewVersionApp;
@@ -16,9 +17,10 @@ import ru.nebolife.bot.core.helpers.StopBotException;
 import ru.nebolife.bot.core.listeners.*;
 import ru.nebolife.bot.core.models.UserProfile;
 
-import javax.swing.text.html.parser.ContentModel;
 import java.io.IOException;
 import java.net.URL;
+import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 public class RequestCore {
@@ -29,10 +31,14 @@ public class RequestCore {
     public boolean isStop = false;
     public Response currentResponse;
     private boolean logShow = false;
+    private List<BaseHookInterface> hooks = new ArrayList<>();
 
     public RequestCore(String baseUrl) {
         this.baseUrl = baseUrl;
         this.client = new OkHttpClient.Builder().cookieJar(new CookieStore()).build();
+        this.hooks.add(new PrMr(this, this.profile));
+        this.hooks.add(new UserProfileData(this, this.profile));
+        this.hooks.add(new HotelHook(this, this.profile));
     }
 
     public void stop(){
@@ -48,7 +54,11 @@ public class RequestCore {
         return this.doc.title().equals(title);
     }
 
-    public void go(String path) throws StopBotException {
+    public void goHotel() throws StopBotException {
+        this.go(this.doc.select("div.rs>a.flhdr[href*=floor/0/]").first().attr("href"));
+    }
+
+    public void go(final String path) throws StopBotException {
         if (this.isStop) { throw new StopBotException();}
         try {
             Thread.sleep(700);
@@ -61,11 +71,18 @@ public class RequestCore {
             ResponseBody body = this.currentResponse.body();
             if (body != null) {
                 doc = Jsoup.parse(body.string());
+                this.runHooks();
             }
         } catch (IOException | InterruptedException e) {
             e.printStackTrace();
         }
 
+    }
+    private void runHooks() throws StopBotException {
+        if (!this.isExistsName()) return;
+        for (BaseHookInterface hook : this.hooks) {
+            hook.run();
+        }
     }
 
     public void baseGo(String _url){
@@ -161,6 +178,10 @@ public class RequestCore {
 
     public void lift(LiftListener liftListener)throws StopBotException{
         new Lift(this).run(liftListener);
+    }
+
+    public void humanInHotelEvict(final String humanLink, HotelListener hotelListener) throws StopBotException{
+        new Hotel(this).evict(humanLink, hotelListener);
     }
 
     public void payAllDollars(GetOntInfoListener getOntInfoListener)throws StopBotException{
