@@ -12,7 +12,6 @@ public class CheckInfo {
     public CheckInfo(RequestCore requestCore, CheckInstance checkInstance) {
         this.requestCore = requestCore;
         this.checkInstance = checkInstance;
-        this.requestCore.baseUrl = "http://nebo-bot.s3-website.eu-west-3.amazonaws.com/";
     }
 
     public void isUserBaned(String nickname) throws StopBotException{

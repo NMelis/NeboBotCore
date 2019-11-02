@@ -14,7 +14,6 @@ public class NewVersionApp {
     public NewVersionApp(RequestCore requestCore, NewVersionAppInterface newVersionAppInterface) {
         this.requestCore = requestCore;
         this.newVersionAppInterface = newVersionAppInterface;
-        this.requestCore.baseUrl = "http://nebo-bot.s3-website.eu-west-3.amazonaws.com/";
     }
 
 

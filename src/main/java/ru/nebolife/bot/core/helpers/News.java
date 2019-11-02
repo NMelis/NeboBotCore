@@ -13,14 +13,11 @@ public class News {
     public News(RequestCore requestCore, CheckInstanceNew checkInstanceNew) {
         this.requestCore = requestCore;
         this.checkInstanceNew = checkInstanceNew;
-        this.requestCore.baseUrl = "http://nebo-bot.s3-website.eu-west-3.amazonaws.com/";
     }
 
     public void getLastNew() throws StopBotException{
-        this.requestCore.go("lastNew.json");
-        JSONObject Jobject = new JSONObject(this.requestCore.doc.body().text());
-        String new_ = (String) Jobject.get("new");
-        checkInstanceNew.onResponse(new_);
+        this.requestCore.go("lastNew.md");
+        checkInstanceNew.onResponse(this.requestCore.doc.body().text());
     }
 
     public void getNews()throws StopBotException {
