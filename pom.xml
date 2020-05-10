@@ -6,7 +6,7 @@
 
     <groupId>NeboBotCore</groupId>
     <artifactId>NeboBotCore</artifactId>
-    <version>2.2-FIX_LINKS</version>
+    <version>2.3-GrowUpUsersInCity</version>
     <build>
         <plugins>
             <plugin>

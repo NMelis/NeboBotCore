@@ -11,8 +11,16 @@ import java.util.List;
 
 public class City {
     RequestCore requestCore;
-    List<String> invitedUsers = new ArrayList<String>();
+    public List<String> invitedUsers = new ArrayList<String>();
     int passInviteReinviteUsers = 0;
+
+    public enum Position {
+        NewUser,
+        Citizen,
+        Businessman,
+        Advisor,
+        ViceMayor,
+    }
 
     public class InviterUser{
         String nickname;
@@ -41,6 +49,43 @@ public class City {
         this.requestCore.profile.city.placeForUsers = this.requestCore.getElementInt("div.main>div>div.nfl>span", true);
         if (!this.requestCore.getElementText("div.main>div>div.nfl>div.small.minor.nshd>a", true).equals("")){
             this.requestCore.profile.city.isCanInviteUsers = true;
+        }
+    }
+    public void growUpUser(String userUrl, Position position, GetOntInfoListener listener) throws StopBotException{
+        String userId = userUrl.split("/")[3];
+        this.requestCore.go("/city/role/0/" + userId);
+        if (!this.requestCore.doc.title().equals("Доступ закрыт")){
+            String growUpLink = null;
+            String growUp = "";
+            try {
+
+                if (position == Position.Citizen) {
+                    growUp = "горожанин";
+                    growUpLink = this.requestCore.doc.selectFirst("a:contains(горожанин)").attr("href");
+                }
+                if (position == Position.Businessman) {
+                    growUp = "бизнесмен";
+                    growUpLink = this.requestCore.doc.selectFirst("a:contains(бизнесмен)").attr("href");
+                }
+                if (position == Position.Advisor) {
+                    growUp = "советник";
+                    growUpLink = this.requestCore.doc.selectFirst("a:contains(советник)").attr("href");
+                }
+                if (position == Position.ViceMayor) {
+                    growUp = "вице-мэр";
+                    growUpLink = this.requestCore.doc.selectFirst("a:contains(вице-мэр)").attr("href");
+                }
+            }catch (NullPointerException error){
+                listener.response("Невозможно изменить должность (Возможно у пользователя и так установлен такой должность какой нужен)");
+            }
+            
+            if (growUpLink != null){
+                this.requestCore.go(growUpLink);
+                if (this.requestCore.doc.title().equals("Профиль")){
+                    String userNikName = this.requestCore.getElementText("div.snow>span>strong>span.user>span>span", true);
+                    listener.response("Должность '"+growUp+"' установлен для пользователя: "+userNikName);
+                }
+            }
         }
     }
 
